@@ -4,7 +4,7 @@
 angular.module('myApp', [
   'ngRoute',
   'view1',
-  'myApp.view2',
+  'view2',
   'myApp.version'
 ]).
 config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
@@ -15,7 +15,7 @@ config(['$locationProvider', '$routeProvider', function ($locationProvider, $rou
     template: '<view1></view1>'
   }).
     when('/view2', {
-    template: '<view1></view1>'
+    template: '<view2></view2>'
   }).
   otherwise('/view1');
 
