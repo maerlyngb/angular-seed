@@ -3,7 +3,7 @@
 angular.
   module('view2').
   component('view2', {
-    templateUrl: 'view2/view2.template.html',
+    templateUrl: 'components/view2/view2.template.html',
     controller: [
       function View2Controller() {
 
