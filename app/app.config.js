@@ -1,12 +1,7 @@
 'use strict';
 
 // Declare app level module which depends on views, and components
-angular.module('myApp', [
-  'ngRoute',
-  'view1',
-  'view2',
-  'myApp.version'
-]).
+angular.module('myApp').
 config(['$locationProvider', '$routeProvider', function ($locationProvider, $routeProvider) {
   $locationProvider.html5Mode(true);
 
