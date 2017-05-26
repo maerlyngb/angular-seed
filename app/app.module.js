@@ -1,9 +1,10 @@
 'use strict';
 
-// Declare app level module which depends on views, and components
-angular.module('myApp', [
+// Define the `phonecatApp` module
+angular.module('phonecatApp', [
+  'ngAnimate',
   'ngRoute',
-  'view1',
-  'view2',
-  'myApp.version'
+  'core',
+  'phoneDetail',
+  'phoneList'
 ]);

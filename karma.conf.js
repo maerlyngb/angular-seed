@@ -6,9 +6,10 @@ module.exports = function(config) {
 
     files: [
       'bower_components/angular/angular.js',
+      'bower_components/angular-animate/angular-animate.js',
+      'bower_components/angular-resource/angular-resource.js',
       'bower_components/angular-route/angular-route.js',
       'bower_components/angular-mocks/angular-mocks.js',
-      'components/**/*.js',
       '**/*.module.js',
       '*!(.module|.spec).js',
       '!(bower_components)/**/*!(.module|.spec).js',
@@ -19,19 +20,13 @@ module.exports = function(config) {
 
     frameworks: ['jasmine'],
 
-    browsers: ['Chrome'],
+    browsers: ['Chrome', 'Firefox'],
 
     plugins: [
       'karma-chrome-launcher',
       'karma-firefox-launcher',
-      'karma-jasmine',
-      'karma-junit-reporter'
-    ],
-
-    junitReporter: {
-      outputFile: 'test_out/unit.xml',
-      suite: 'unit'
-    }
+      'karma-jasmine'
+    ]
 
   });
 };
