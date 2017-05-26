@@ -4,7 +4,7 @@
 angular.
   module('phoneDetail').
   component('phoneDetail', {
-    templateUrl: 'phone-detail/phone-detail.template.html',
+    templateUrl: 'components/phone-detail/phone-detail.template.html',
     controller: [
       function PhoneDetailController() {
 
