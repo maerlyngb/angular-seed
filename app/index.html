@@ -1,34 +1,39 @@
 <!doctype html>
 <html lang="en" ng-app="myApp">
-  <head>
-    <meta charset="utf-8">
-    <title>Google Phone Gallery</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
-    <link rel="stylesheet" href="css/app.css" />
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>AngularJS Starter App</title>
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="css/app.css" />
 
-    <!-- Angular Components -->
-    <script src="bower_components/angular/angular.js"></script>
-    <script src="bower_components/angular-resource/angular-resource.js"></script>
-    <script src="bower_components/angular-route/angular-route.js"></script>
+  <!-- Dependencies -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
 
-    <!-- App Core-->
-    <script src="app.module.js"></script>
-    <script src="app.config.js"></script>
+  <!-- Angular Components -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-resource/angular-resource.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
 
-    <!-- App Components-->
-    <script src="components/phone-list/phone-list.module.js"></script>
-    <script src="components/phone-list/phone-list.component.js"></script>
+  <!-- Core-->
+  <script src="app.module.js"></script>
+  <script src="app.config.js"></script>
 
-    <script src="components/phone-detail/phone-detail.module.js"></script>
-    <script src="components/phone-detail/phone-detail.component.js"></script>
-  </head>
-  <body>
+  <!-- Pages -->
+  <script src="components/pages/landing-page/landing-page.module.js"></script>
+  <script src="components/pages/landing-page/landing-page.component.js"></script>
 
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
-    </div>
+  <!-- Widgets-->
+  <script src="components/widgets/first-widget/first-widget.module.js"></script>
+  <script src="components/widgets/first-widget/first-widget.component.js"></script>
+</head>
 
-  </body>
+<body>
+
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
+
+</body>
+
 </html>

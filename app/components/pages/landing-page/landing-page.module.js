@@ -1,0 +1,6 @@
+'use strict';
+
+// Define the `landingPage` module
+angular.module('landingPage', [
+
+]);
