@@ -1,10 +1,10 @@
 (function () {
-  'use strict';
+    'use strict';
 
-  // Define the `myApp` module
-  angular.module('myApp', [
-    'ngRoute',
-    'landingPage',
-    'firstWidget'
-  ]);
+    // Define the `myApp` module
+    angular.module('myApp', [
+        'ngRoute',
+        'landingPage',
+        'firstWidget'
+    ]);
 })();
