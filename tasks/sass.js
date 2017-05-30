@@ -1,9 +1,9 @@
 'use strict';
 
 // Compile Sass
-const sass = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
-const cleanCSS = require('gulp-clean-css');
+var sass = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
+var cleanCSS = require('gulp-clean-css');
 
 module.exports = function (gulp, APP_DIR) {
   return function () {

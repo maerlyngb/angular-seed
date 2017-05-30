@@ -1,12 +1,15 @@
 'use strict';
 
-const APP_DIR = 'app/';
-const gulp = require('gulp');
+var APP_DIR = 'app/';
+var gulp = require('gulp');
 
 // loads external gulp tasks by filename
 function getTask(task) {
-	return require('./tasks/' + task)(gulp, APP_DIR);
+    return require('./tasks/' + task)(gulp, APP_DIR);
 }
+
+// compile js
+gulp.task('js', getTask('js'));
 
 // compile sass
 gulp.task('sass', getTask('sass'));
@@ -18,4 +21,4 @@ gulp.task('serve', getTask('serve'));
 gulp.task('watch', getTask('watch'));
 
 // compile css, server app, watch for changes
-gulp.task('default', ['sass', 'serve', 'watch']);
+gulp.task('default', ['js', 'sass', 'serve', 'watch']);
