@@ -1,6 +1,8 @@
-'use strict';
+(function () {
+    'use strict';
 
-// Define the `landingPage` module
-angular.module('landingPage', [
+    // Define the `landingPage` module
+    angular.module('landingPage', [
 
-]);
+    ]);
+})();

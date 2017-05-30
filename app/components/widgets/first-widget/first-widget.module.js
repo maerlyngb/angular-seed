@@ -1,6 +1,8 @@
-'use strict';
+(function () {
+    'use strict';
 
-// Define the `firstWidget` module
-angular.module('firstWidget', [
+    // Define the `firstWidget` module
+    angular.module('firstWidget', [
 
-]);
+    ]);
+})();
