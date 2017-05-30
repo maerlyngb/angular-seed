@@ -15,8 +15,7 @@ gulp.task('sass', getTask('sass'));
 gulp.task('serve', getTask('serve'));
 
 // watch for file changes and do any required processing
-gulp.task('watch', function() {
-  gulp.watch(APP_DIR + 'styles/sass/*.scss', ['sass']);
-});
+gulp.task('watch', getTask('watch'));
 
+// compile css, server app, watch for changes
 gulp.task('default', ['sass', 'serve', 'watch']);
