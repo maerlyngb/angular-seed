@@ -17,7 +17,8 @@ module.exports = function (gulp, APP_DIR) {
             entries: APP_DIR + 'scripts/entry.js',
             debug: false
         });
-        return b.bundle()
+
+        b.bundle()
             .pipe(source('app.js'))
             .pipe(buffer())
             // .pipe(sourcemaps.init({
