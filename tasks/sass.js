@@ -7,7 +7,7 @@ var cleanCSS = require('gulp-clean-css');
 
 module.exports = function (gulp, APP_DIR) {
     return function () {
-        gulp.src(APP_DIR + 'styles/sass/*.scss')
+        return gulp.src(APP_DIR + 'styles/sass/*.scss')
             .pipe(sass({
                 style: 'expanded'
             }))

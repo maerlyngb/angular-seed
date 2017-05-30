@@ -18,7 +18,7 @@ module.exports = function (gulp, APP_DIR) {
             debug: false
         });
 
-        b.bundle()
+        return b.bundle()
             .pipe(source('app.js'))
             .pipe(buffer())
             // .pipe(sourcemaps.init({

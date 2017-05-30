@@ -1,8 +1,8 @@
 (function () {
     'use strict';
 
-    var $ = require("jquery");
-    var angular = require('angular');
+    require('jquery');
+    require('angular');
     require('angular-route');
 
     require('./components/app');

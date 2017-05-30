@@ -8,6 +8,8 @@ function getTask(task) {
     return require('./tasks/' + task)(gulp, APP_DIR);
 }
 
+gulp.task('lint', getTask('lint'));
+
 // compile js
 gulp.task('js', getTask('js'));
 
@@ -21,4 +23,4 @@ gulp.task('serve', getTask('serve'));
 gulp.task('watch', getTask('watch'));
 
 // compile css, server app, watch for changes
-gulp.task('default', ['js', 'sass', 'serve', 'watch']);
+gulp.task('default', ['lint', 'js', 'sass', 'serve', 'watch']);
