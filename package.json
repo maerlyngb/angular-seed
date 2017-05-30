@@ -12,6 +12,7 @@
     "gulp-clean-css": "^3.4.0",
     "gulp-concat": "latest",
     "gulp-connect": "latest",
+    "gulp-load-plugins": "^1.5.0",
     "gulp-sass": "latest",
     "gulp-uglify": "latest",
     "gulp-util": "latest",

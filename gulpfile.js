@@ -1,20 +1,14 @@
 'use strict';
 
-var APP_DIR = 'app/';
+const APP_DIR = 'app/';
+const gulp = require('gulp');
 
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var autoprefixer = require('gulp-autoprefixer');
-var cleanCSS = require('gulp-clean-css');
+// loads external gulp tasks by filename
+function getTask(task) {
+	return require('./tasks/' + task)(gulp, APP_DIR);
+}
 
-gulp.task('sass', function() {
-  gulp.src(APP_DIR + 'styles/sass/*.scss')
-    .pipe(sass({style: 'expanded'}))
-    .on('error', sass.logError)
-    .pipe(autoprefixer())
-    .pipe(cleanCSS({compatibility: 'ie8'}))
-    .pipe(gulp.dest(APP_DIR + 'styles'));
-});
+gulp.task('sass', getTask('sass'));
 
 gulp.task('watch', function() {
   gulp.watch(APP_DIR + 'styles/sass/*.scss', ['sass']);
